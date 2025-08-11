@@ -1,0 +1,61 @@
+/* CSS styles for the chessboard and UI elements */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #333;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+}
+
+.square.light {
+    background-color: #eee;
+}
+
+.square.dark {
+    background-color: #333;
+}
+
+.piece {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.piece.white {
+    background-image: url('../assets/white_piece.png'); /* Placeholder for white piece image */
+}
+
+.piece.black {
+    background-image: url('../assets/black_piece.png'); /* Placeholder for black piece image */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
